@@ -1,0 +1,15 @@
+ Q1>   53/udp
+ 
+ Q2>   172 is class b ip 
+       
+       subnet prefix is 16
+   
+       subnet 255.255.0.0
+
+       network ID 172.12.0.1/16
+
+       Gateway 172.12.0.1
+      
+       Broadcast add 172.12.255.255
+
+ Q3>   2^16= 65536-2 (1st gate way & 2nd broadcast Ip)

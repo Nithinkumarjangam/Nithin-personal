@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8>"
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>Sample HTML Page</title>
+    </head>
+    <body>
+        <h1>Hello,world!</h1>
+        <p>This is a Sample Html page.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </body>
+</html>

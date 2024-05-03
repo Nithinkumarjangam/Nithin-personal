@@ -1,0 +1,46 @@
+                                DAY-18 
+                             DIY-SOLUTION
+
+Step 1: To create an S3 bucket using the Amazon S3 console
+1.Open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+2.Choose Create bucket.
+3.On the Create bucket page, do the following:
+For Bucket name, enter a name for your bucket. This name must be unique across all existing bucket names in Amazon S3. In some Regions, there might be additional restrictions on bucket names. For more information, see Bucket restrictions and limitations in the Amazon Simple Storage Service User Guide.
+4.For AWS Region, select the Region where you created your load balancer.
+5.For Default encryption, choose Amazon S3-managed keys (SSE-S3).
+6.Choose Create bucket.
+
+Step 2: To attach a bucket policy for access logs to your bucket using the Amazon S3 console
+1.Open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+2.Select the name of the bucket to open its details page.
+3.Choose Permissions and then choose Bucket policy, Edit.
+4.Update the bucket policy to grant the required permissions.
+5.Choose Save changes.
+
+Step-3:To configure access logs for your load balancer using the console
+1.Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+2.On the navigation pane, under Load Balancing, choose Load Balancers.
+3.Select the name of your load balancer to open its details page.
+4.On the Description tab, choose Configure access logs.
+5.On the Configure access logs page, do the following:
+6.Select Enable access logs.
+7.Keep Interval as the default, 60 minutes.
+8.For S3 location, enter the S3 URI for your log files. The URI that you   specify depends on whether you're using a prefix.
+9.URI with a prefix: s3://bucket-name/prefix
+10.URI without a prefix: s3://bucket-name
+11.Choose Save.
+
+Step-4:To verify that Elastic Load Balancing created a test file in your S3bucket
+1.Open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+2.Select the name of the S3 bucket that you specified for access logs.
+3.Navigate to the test file, ELBAccessLogTestFile. The location depends on   whether you're using a prefix.
+4.Location with a prefix: my-  bucket/prefix/AWSLogs/123456789012/ELBAccessLogTestFile
+
+5.Location without a prefix: my-  bucket/AWSLogs/123456789012/ELBAccessLogTestFile
+
+Estimate time:10 minutes
+Summary:To enable access logs for your load balancer, you must specify the name of the Amazon S3 bucket where the load balancer will store the logs. You must also attach a bucket policy to this bucket that grants Elastic Load Balancing permission to write to the bucket.
+
+
+
+

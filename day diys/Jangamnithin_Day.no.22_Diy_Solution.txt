@@ -1,0 +1,81 @@
+                                  DAY-22
+                               DIY-SOLUTION
+
+
+Task-1:To create an Amazon RDS security group
+
+1.In AWS Explorer, expand the Amazon RDS node, open the context (right-click) menu for the DB Security Groups subnode and choose Create.
+Alternatively, on the Security Groups tab, choose Create Security Group. If this tab isn't displayed, open the context (right-click) menu for the DB Security Groups subnode and choose View.
+
+2.In the Create Security Group dialog box, type a name and description for the security group, and then choose OK.
+
+Task-2:To create a DB instance
+
+1.Sign in to the AWS Management Console and open the Amazon RDS console at   https://console.aws.amazon.com/rds/.
+
+2.In the upper-right corner of the Amazon RDS console, choose the AWS Region   in which you want to create the DB instance.
+
+3.In the navigation pane, choose Databases.
+
+4.Choose Create database, then choose Standard create.
+
+5.For Engine type, choose MariaDB, Microsoft SQL Server, MySQL, Oracle, or PostgreSQL.
+  Microsoft SQL Server is shown here.
+
+6.For Database management type, if you're using Oracle or SQL Server choose Amazon RDS or Amazon RDS Custom.
+Amazon RDS is shown here. For more information on RDS Custom, see Working with Amazon RDS Custom.
+
+7.For Edition, if you're using Oracle or SQL Server choose the DB engine edition that you want to use.
+MySQL has only one option for the edition, and MariaDB and PostgreSQL have none.
+
+8.For Version, choose the engine version.
+
+9.In Templates, choose the template that matches your use case. If you choose Production, the following are preselected in a later step:
+
+a).Multi-AZ failover option
+
+b).Provisioned IOPS SSD (io1) storage option
+
+c).Enable deletion protection option
+
+10.To enter your master password, do the following:
+
+a).In the Settings section, open Credential Settings.
+
+b).If you want to specify a password, clear the Auto generate a password check box if it is selected.
+
+c).Change the Master username value.
+
+d).Enter the same password in Master password and Confirm password.
+
+11.Set up a connection to a compute resource for this DB instance.
+You can configure connectivity between an Amazon EC2 instance and the new DB instance during DB instance creation. For more information, see Configure automatic network connectivity with an EC2 instance.
+
+12.In the Connectivity section under VPC security group (firewall), if you select Create new, a VPC security group is created with an inbound rule that allows your local computer's IP address to access the database.
+
+13.For the remaining sections, specify your DB instance settings. For information about each setting, see Settings for DB instances.
+
+14.Choose Create database.
+
+i).If you chose to use an automatically generated password, the View    credential details button appears on the Databases page.
+
+ii).To view the master user name and password for the DB instance, choose View credential details.
+
+iii).To connect to the DB instance as the master user, use the user name and password that appear.
+
+15.For Databases, choose the name of the new DB instance.
+On the RDS console, the details for the new DB instance appear. The DB instance has a status of Creating until the DB instance is created and ready for use. When the state changes to Available, you can connect to the DB instance. Depending on the DB instance class and storage allocated, it can take several minutes for the new instance to be available.
+
+
+Connecting  to  RDS  Database  on  a  DB  Instance  using the MySQL Workbench follow the steps:
+1.Download and install MySQL Workbench.
+2.Open MySQL Workbench, and then choose the ⊕ sign beside MySQL Connections to set up a new connection.
+3.In the Setup New Connection dialog box, enter a name for your connection.
+4.In the Parameters section, enter these details:
+  Host name: Enter the RDS endpoint.
+       Port: Enter the Port number.
+   Username: Enter the primary user.
+Note: You can get these details from the Amazon RDS console. From the Databases section, choose Instances, and then select the instance that you are connecting to. From the Connectivity and Security tab, choose Configuration. The primary user is listed here.
+5.Choose Test Connection.
+6.In the pop-up window that appears, enter the password that you configured when you created the DB instance, and then choose OK.
+7.After testing your connection, from the Setup new connection dialog box, choose OK to save the connection.

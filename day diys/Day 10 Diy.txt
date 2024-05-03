@@ -1,0 +1,132 @@
+Q1> Problem statement: Identifying cloud computing service Models in a case study
+
+Objective: To be able to identify under which service model of cloud computing does the below scenario fall.
+
+Background: A company XYZ is using traditional IT & wants to migrate or upgrade existing workloads to newer version of SQL server database.
+
+Problem Description:
+
+1. The company wants its internal IT teams to work on their regular schedules & focus on innovating their core business than taking the responsibility for routine database managment & monitoring.
+
+2. The company also wants its customers to spin up the new SQL server databases on-demand in an isolated cloud environment.This will enable its customers to increase performance & speed up the workload processing.
+
+Solution:
+laaS provides access to fundamental resources such as physical machines,virtual machines,virtual storage,etc.
+
+Here the consumers does not need to manager or control the underlying cloud infrastructure at all besides some limited control is being givento select the networking components like host,firewalls,etc.
+
+Estimated time:10 minutes 
+
+summary of this assingment: laas services allow an organization to leverage and focus their time and resources on bringing innovations in applications and solutions.Each infrastructure component is provided as a service.
+For example:hardware-as-a-service server-as-a-service,computing-as-a-service  
+
+
+
+
+Q2> Identifying Cloud computing service Models in a case study
+
+Objective:To be able to identify underwhich service model of cloud computing does the below scenario fall.
+
+Background: A Retail Company LMN wants to automate its operations so as to improve its productivity and operational efficiency.
+
+Problem Description:
+
+1.LMN wants its development cycle time to be reduced so as to enable more new products to reach the market faster.It wants to rather focus the development time on extending and improving the applications rather than maintaining its infrastructure.
+
+2.It aims that deployment of applications become possible across their entire network while negating the need to buy or maintain hardware or software.
+
+3. It wants the CSP to provide a computing platform and the provision and deployment of the associated set of software applications.
+
+Solution:
+
+paas provides the platform for the creation of an application or software delivered over the web on-demand. It provides services required to support the complete life cycle of building and delivering web applications and services on the internet without having to worry about the need to maintain the software or hardware.
+
+Estimated time:10 minutes
+
+Summary of this assignment:
+
+Here the CSP provides programming languages,libraries,srvices,and various other tools to the consumer;so that he can just focus on developing the application and onvce done,deploy it onto the cloud
+
+The user need not worry about the underlying cloud infrastructure including network,servers,operating systems,or storage.
+
+
+
+
+Q3.> Identifying Cloud computing service models in case study.
+
+Objective: To be able to identify under which service model of cloud computing does the below scenario fall.
+
+Background: A healthcare technical services firm delivers tech support to healthcare customers who use its clinical software-which captures data,allows patients to interact with providers,and is designed to facilitate lower cost,higher quality healthcare-to provide patient care.
+
+But the frim did not have centralized visibility and management of the IT estate.This meant support for customers and users was largely reactive,with problems only being addressed after the event.
+
+Problem Description:
+
+1. Auditing version control, and configuration were the key focus areas.They needed a solution that would supplement the support infrastructure already in place already,whilst inreasing visibility.
+
+2. They want someone to provide software solutions to their business problems as well as to maintain the software solutions by providing regular upgrades and enhancements;a service that not only could scale to the device volumes required but could do so at a workable cost.
+
+
+
+
+
+Q4.> Identifying cloud computing service models in a case study?
+
+Objective: To be able to identify under which service model of cloud computing does the below scenario fall.
+
+Background:Below is given certain scenarios.Based on the requirement, letus try to find out which deployment model should one select for specfic situation.
+
+Problem Descripton:
+
+1.An organization is required to maintain sensitive customer data within its own infrastructure.
+
+2.Mulitple clients will access virtualized services all operating from the same servers.
+
+3. Organization has put its IT functions into the public cloud but prefers to keep higher-risk or more bespoke functions functions in a private cloud or even in- house.
+
+4.Comapny has SAAS applications froma vendor who has a well-implemented security strategy.
+
+5. organization is working on a collaboration project and should have the ability to add computer capacity for peak times. 
+
+6.Comapny wants to use a SaaS applications but is connected about security.The SaaS vendor can create a cloud just for the company inside its firewall. And it provides you with a virtual private network(VPN) for additional security.
+
+7. A company offers services that are tailored forn different vertical markets.It decides to use cloud computing to intreact with the clients but also aims at keeping their data secured within private cloud.
+
+8.Your business is part of an industry that must conform to strict security and dataprivacy issues.
+
+9. Your company is large enough to run a next-generation cloud data center efficiently and effectively on its own.
+
+10. Company A and company B want to share the same architecture and have the same security concerns.
+
+
+Solution:
+
+
+* Private Cloud
+
+* public  Cloud
+
+* Hybrid  Cloud
+
+* Public  Cloud
+
+* Public  Cloud
+
+* Virtual Cloud
+
+* Hybrid  Cloud
+
+* Private Cloud
+
+
+Summary of this assignment:
+
+From the above case studies,we can summarize that,
+
+1. A public cloud is an obvious choice when you need high efficiency in shared resources and services and infrastructure are provided offsite over internet.
+
+2. We can go for private cloud when security and control are of the highest concern as your business deals with your own data and your own application.In a private cloud services and infrastructure are maintained on a private network.
+
+3. A Hybrid Cloud is an obvious choice when you need the public cloud to interact with the clients but the same time, you are also concerned 
+
+

@@ -1,0 +1,37 @@
+                             
+
+
+
+1.Sign in to the AWS Management Console and open the Amazon EFS console at     https://console.aws.amazon.com/efs/.
+
+2.In the left navigation pane, choose File systems.
+
+3.In the File systems list, choose the Amazon EFS file system that you want to   replicate. The file system that you choose cannot be a source or destination   file system in an existing replication configuration.
+
+4.Choose the Replication tab to display the file system's replication section.   The section should be blank. If it is not, choose a different file system to   be the source.
+ 
+5.If the file system is not already replicated, choose Create replication to   display the Create replication page.
+
+6.For Replication settings, choose the following options:
+
+  Destination Region – The AWS Region in which you want to create the                                 destination file system.
+
+  Availability and durability – Choose Regional or One Zone.
+
+   a.To create a file system that has the highest levels of availability and        durability, choose Regional. The destination file system will use EFS         Standard storage. With EFS Standard storage, your file system data and         metadata are stored redundantly across multiple geographically separated       Availability Zones within an AWS Region. For more information, see EFS         storage classes.
+
+   b.To create a file system that uses EFS One Zone storage, choose One Zone.       With EFS One Zone storage, your file system data and metadata are stored       redundantly within a single Availability Zone within an AWS Region. For        more information, see EFS storage classes.
+
+  If you choose One Zone, you must also choose the Availability Zone to create   the file system in.
+
+  Encryption – Encryption of data at rest is automatically enabled on the     destination file system. By default, Amazon EFS uses your AWS Key Management   Service (AWS KMS) service key for Amazon EFS (aws/elasticfilesystem). To use   a different KMS key, choose a KMS key from the list, or enter the ARN for an   existing key.
+
+Important:
+After the file system is created, you cannot change the KMS key.
+
+8.Choose Create replication. The Replication section is displayed, showing the   replication details. The Replication state value is initially Enabling, and   Last synced is blank. After the state reads Enabled, Last synced shows   Initial sync in progress.
+
+9.To see the destination file system's configuration information, choose the   file system ID above Destination file system. The File system details page   for the destination file system displays in a new browser tab (depending on   your browser settings).
+
+
+

@@ -1,0 +1,46 @@
+                        DAY-16 DIY_SOLUTIONS
+                             SOLUTION-1
+
+
+1.Transfer Acceleration is only supported on virtual-hosted style requests.For more information about virtual-hosted style requests, see Making requests using the REST API.
+
+2.The name of the bucket used for Transfer Acceleration must be DNS-compliant and must not contain periods (".").
+
+3.Transfer Acceleration must be enabled on the bucket. For more information, see Enabling and using S3 Transfer Acceleration.
+
+4.After you enable Transfer Acceleration on a bucket, it might take up to 20 minutes before the data transfer speed to the bucket increases.
+
+5.To access the bucket that is enabled for Transfer Acceleration, you must use the endpoint bucketname.s3-accelerate.amazonaws.com. Or, use the dual-stack   endpoint bucketname.s3-accelerate.dualstack.amazonaws.com to connect to the   enabled bucket over IPv6.
+
+You must be the bucket owner to set the transfer acceleration state. The bucket owner can assign permissions to other users to allow them to set the acceleration state on a bucket. The s3:PutAccelerateConfiguration permission permits users to enable or disable Transfer Acceleration on a bucket. The s3:GetAccelerateConfiguration permission permits users to return the Transfer Acceleration state of a bucket, which is either Enabled or Suspended. For more information about these permissions, see Example — Bucket subresource operations and Identity and access management in Amazon S3.
+
+SOLUTION-2
+1.You must authenticate all requests involving Requester Pays buckets. The request authentication enables Amazon S3 to identify and charge the requester for their use of the Requester Pays bucket.
+
+2.When the requester assumes an AWS Identity and Access Management (IAM) role   before making their request, the account to which the role belongs is charged for the request. For more information about IAM roles, see IAM roles   in the IAM User Guide.
+
+3.After you configure a bucket to be a Requester Pays bucket, requesters must   include x-amz-request-payer in their API request header, for DELETE, GET,HEAD, POST, and PUT requests, or as a parameter in a REST request to show   that they understand that they will be charged for the request and the data download.
+
+To enable Requester Pays for an S3 bucket:
+
+Step-1:Sign in to the AWS Management Console and open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+
+Step-2:In the Buckets list, choose the name of the bucket that you want to enable Requester Pays for.
+
+Step-3:Choose Properties.
+
+Step-4:Under Requester pays, choose Edit.
+
+Step-5:Choose Enable, and choose Save changes.
+
+Step-6:Amazon S3 enables Requester Pays for your bucket and displays your Bucket overview. Under Requester pays, you see Enabled.
+
+
+
+
+
+
+
+
+
+

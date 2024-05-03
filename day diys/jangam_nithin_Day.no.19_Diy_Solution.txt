@@ -1,0 +1,27 @@
+
+
+                                DAY-19
+ 
+                    DAY-19 DIY_SOLUTION
+
+
+
+To enable duration-based stickiness using the console
+
+1.Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+
+2.On the navigation pane, under Load Balancing, choose Target Groups.
+
+3.Choose the name of the target group to open its details page.
+
+4.On the Group details tab, in the Attributes section, choose Edit.
+
+5.On the Edit attributes page, do the following:
+
+  a.Select Stickiness.
+
+  b.For Stickiness type, select Load balancer generated cookie.
+
+  c.For Stickiness duration, specify a value between 1 second and 7 days.
+
+  d.Choose Save changes.

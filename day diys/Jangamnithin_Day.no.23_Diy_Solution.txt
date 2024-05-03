@@ -1,0 +1,22 @@
+                       DAY-23 DIY-SOLUTION
+
+
+To Perform CRUD on Dynamo DB using CLI
+Create, Read, Update, and Delete operations using AWS CLI command
+
+1.Create a new item – A new customer entry in DynamoDB table
+
+aws dynamodb put-item --table-name CustomerTable --item "{\"Id\":{\"N\": \"123\"},\"Name\":{\"S\":\"John Wick\"},\"Email\":{\"S\": \"johnwick@example.com\"}, \"Address\": {\"S\": \"123 Main St\"}}"
+
+2.Read item: Get the customer details with an Id of 123
+
+aws dynamodb get-item --table-name CustomerTable --key "{ \"Id\": {\"N\": \"123\"} }"
+
+3.Update item: update existing customer details with Id of 123
+
+aws dynamodb update-item --table-name CustomerTable --key "{\"Id\": {\"N\": \"123\"}}" --update-expression "SET #name = :name, #email = :email, #address = :address" --expression-attribute-names "{\"#name\": \"Name\", \"#email\": \"Email\", \"#address\": \"Address\"}" --expression-attribute-values "{\":name\": {\"S\": \"James\"}, \":email\": {\"S\": \"James@example.com\"}, \":address\": {\"S\": \"456 Main St\"}}"
+
+
+4.Delete item: Delete customer details from table with Id of 123
+
+aws dynamodb delete-item --table-name CustomerTable --key "{ \"Id\": {\"N\": \"123\"} }"

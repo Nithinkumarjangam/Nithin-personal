@@ -1,0 +1,43 @@
+                     DAY-11 DIY-SOLUTIONS
+
+  Solution-1
+1.SES - Simple email service by Amazon in App Service
+2.SNS- Simple notification service for push messageing in App Service 
+  CloudTrail-To log application programming interface(API)in Deployement and Management.
+3.RDS-Relational Database service provided by Amazon in Database.
+4.Import Export-To transfer large amount of data using storage devices in Storage AND CDN
+  DATA PIPELINE-To transfer data between compute and storage devices.
+
+Solution-2
+  Introduction to AWS.
+  Email service 
+  notification
+  log API
+  RDS 
+  ImportExport
+  Data Pipeline
+
+Solution-3
+  IAM tutorial
+  STEP 1-Activate access to billing data on your AWS test account
+	 Go to console
+         Root account login
+	 My account
+         select IAM user and roll access to billing information,choose edit activate and update.Now we can access 
+  STEP 2-Create IAM policies that grant permissions to billing data.
+	 Sign in to IAM
+	 Full access go to all billing actions.
+	 Choose review policy
+	 On the review page next to name type BillingFullAccess,and then choose create policy to save it Read Only access.
+	 In IAM console create policy choose select actions and then select checkbox next to read
+	 choose review policy
+	 For name type billing view access then create policy and save it.
+  STEP 3-Attach billing policies to your user group
+	 Sign out of the console.
+  STEP 4-Test access to the billing console
+	 Sign in with AWS ID and IAM
+	 In full access sign in to your AWS account as the user finance manager On the navigation bar choose FinanceManager@<ID number>and then choose My Billing Dashboard and then browsre	 to the pages and choose the various buttons to ensure that ypu have full modification permissions.Read only access Sign in to your AWS account as the FinanaceUser.
+	 On the navigation bar,choose FinanaceUser@<ID no.>and then choose My Billing Dashboard browse throgh the pages you can display costs,reports and billing data with no problem.
+	 however if we choose modfy option you receive an accessdenied message.
+
+	 

@@ -1,0 +1,60 @@
+                            DAY_24 
+                         DIY_SOLUTION
+Move Data from Amazon S3 to Redshift with AWS Glue  
+You can transfer data with AWS Glue in the following way:   
+
+Launch the AWS Redshift Cluster.  
+1)Create a database user for migration.  
+2)Create an IAM role and give it access to S3 
+3)Attach the IAM role to the database target. 
+4)Add a new database in AWS glue.  
+5)Add new tables in the AWS Glue database.  
+6)Give Amazon s3 source location and table column details.  
+7)Create a job in AWS Glue.  
+8)Specify the IAM role and Amazon S3 as data sources in parameters.  
+9)Choose ‘create tables in your data target’ option and choose JDBC for datastore.  
+10)Run AWS Glue job.   
+
+
+To use the query editor on the Amazon Redshift console
+1.Sign in to the AWS Management Console and open the Amazon Redshift console at https://console.aws.amazon.com/redshift/.
+
+2.On the navigation menu, choose Query editor, then connect to a database in your cluster.
+
+3.For Schema, choose public to create a new table based on that schema.
+
+4.Enter the following in the query editor window and choose Run to create a new table.
+
+
+create table shoes(
+                shoetype varchar (10),
+                color varchar(10));
+
+5.Choose Clear.
+
+6.Enter the following command in the query editor window, and choose Run to add rows to the table.
+
+
+insert into shoes values 
+('loafers', 'brown'),
+('sandals', 'black');
+Choose Clear.
+
+7.Enter the following command in the query editor window and choose Run to query the new table.
+
+
+select * from shoes; 
+The Query results displays the results.
+
+Shoe type	Color
+sandals
+
+black
+
+loafers
+
+brown
+
+9.Choose Execution to view the run details.
+
+10.Choose Data, then Export to download the query results as a file.

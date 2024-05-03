@@ -1,0 +1,37 @@
+                               DAY-17 
+                            DIY-SOLUTION
+
+1. To enable S3 Intelligent-Tiering automatic archiving
+
+1.Sign in to the AWS Management Console and open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+
+2.In the Buckets list, choose the name of the bucket that you want.
+
+3.Choose Properties.
+
+4.Navigate to the S3 Intelligent-Tiering Archive configurations section and choose Create configuration.
+
+5.In the Archive configuration settings section, specify a descriptive configuration name for your S3 Intelligent-Tiering Archive configuration.
+
+6.Under Choose a configuration scope, choose a configuration scope to use. Optionally, you can limit the configuration scope to specified objects within a bucket using a shared prefix, object tag, or combination of the two.
+
+7.To limit the scope of the configuration, select Limit the scope of this configuration using one or more filters.
+
+8.To limit the scope of the configuration using a single prefix, enter the prefix under Prefix.
+
+9.To limit the scope of the configuration using object tags, select Add tag and enter a value for Key.
+
+10.Under Status, select Enable.
+
+11.In the Archive settings section, select one or both of the Archive Access tiers to enable.
+
+12.Choose Create.
+
+
+2.How to restore the objects from the s3-intelligent Tiering-Archie
+Open the Amazon S3 console, and then choose the S3 bucket that stores the archived objects that you want to restore.
+1. Select the archived object, and then choose Actions.
+2.Select Initiate restore, and then specify the number of days that you want the restored file to be accessible for.
+3.Select a Retrieval option: bulk, standard, or expedited. Then, choose Restore.
+After the restoration completes, you can download the restored object from the Amazon S3 console. The restore time depends on the storage class and retrieval option:
+

@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q1> Tehnical case study on migration of a chaity trust operations to cloud infrastructure.
+
+Objective: To be able to understand why cloud computing is preferred overtraditional non-IT solutions.
+
+Background: A well-known charity trust XPO has been running since 2001 which helps people to raise money for charity.Since its foundation,around22 million users have raised 3 billion for various causes.Now fundraising has evolved and goes beyond people contributing to various causes by taking part in different activities like running marathons etc.
+ The trust wants to find a way of connecting people with not only more worthy causes but also ones that they actually care for.Like people might have an inclination towards orphanages age.Others might have more liking for Oldage homes.
+
+They have been following traditional methods of considering pervious transaction history and trying to find out areas that could attract more people for fundraising.
+
+Problem Description: On deploying a website as a solution,the frim traces the various challenges/objectives
+
+1. The objective is that giving has to become far more engaging.Firstly,it hasto become social.The second one is that it has to be relevant.So this is where comes in the first challenge.
+
+2. As the traffic i.e. the no.of hits on the website will increase mainfold,the foundation needs to ensure that the website is equipped to handle the increasedload,especially during events of special cause donations.
+
+3. As an enterprise the trust has to be able to take up donations anytime someone has the urge to give to a cause.
+
+4. The next challenge is how do to find out using the data that the trust hasgot, What people actually are looking for?
+simply using traditional methods wouldn't work.Therefore a graph has to be built up.
+
+5. As a proof of concept of the foundation's historical graph,the organization had around 14 years'worth of data with 70 million nodes & 280 million relationships.
+
+6. The foundation uses a range of languages for the graph,such as linux & python in some areas& java in others.So the foundation is looking for an enterprise-ready solution.
+
+XPO is now seeking a solution from somebody as it do not have IT skills.
+
+
+Solution: 
+
+The trust has been depending upon traditinol methods till now but all these challenges would requires support from the cloud.
+
+It's quite clear that the charity trust needs to follow the laas & paas service model.
+
+The above challenges can be met by:
+
+1. Increasing the no.of web Front-end servers so that company's web-portal is available to users at all the time.
+
+2. Adding more App servers so as to accommodate more automated
+business applications managing the operations of the company.
+
+3. Increasing the no.of DB servers to store multi-fold data coming from customers.
+
+4. Flexibility to choose the right technology for the problem without it being a platform-dependent one.
+
+   Products which could be considered: Microsoft Azure, AWS
+
+   Estimated Time: 30 minutes
+
+  Summary of this assignment:  You have learned to identify the deployment model as well as the service to go for in a particular case.
+ 
+Benefits of the above solution could be seen in the below areas:
+
+Flexibility in particular was something major that made them to choose Microsoft for it. As the team could code using whatever language they need,it allowed them to pick the right technology for the problem and it didn't have to be a windows solution specifically. 
+
+
+
+Q2> Case study on a PQR housing association migrating to cloud.
+Objective: To be able to understand how PQR housing association cutsdown its, IT costs by migrating to cloud.
+
+Background: PQR housing association is responsible for managing 1500 homes but the staff number is only 25.
+
+The housing group has also introduced Citrix Desktops for housing officers, allowing them to access their workstations remotley on ipads when they are out on making visits.The associations has been outsourcing certain services for the past few years.But has been experiencing uneven business continuously.
+
+Problem Description:
+
+1. The Company doesn't want to add to its costs by hiring more to support an on-premise IT deployment as there is a chance that the requirement would go down in due course.
+
+2. Another factor is that railway housing operates at 14 separate sites, and buying seperate IT systems for them all would prove horribly expensive .
+
+  The association also needs to upgrade its Microsoft office software to the latest version, while also migrating away from Windows Server 2003 servers to Windows Server2012.
+
+Solution:
+
+ All the problems demanded support from cloud.As they are in need of managing their infrastructure(including network,resources etc.)as well as software maintenance,it is understood that they need to go with the Laas+Paas+Saas servicemodel.
+
+They need to take the following steps:
+
+* The company can let its outsourcer to host its complete infrastructure inside a managed cloud based on business requirement which if goes down,the infra can be relesed.
+
+* The outsourcer will provide single sites with single workstations which would mean wherever they're going,they have an IT presence i.e.resources and network will be available irrespective of their geographic
+
+
+Q3. Case study on migration of Short Story Company to cloud services
+
+Objective: To be able to understand how a short story company translated to huge profits by migrating to the cloud.
+
+Background:
+ Thisnis london-based community website where people share short stories and poems they have written.Readers of the stories offer feedback and can intreact with authors through the company's site.
+
+The company has no hardware intentionally.They wanted to save time & the investment that would have been required to built out their own infrastructure.They wanted focus development time on improving/extending the applications and not on maintaining IT infrastructure
+
+Solution :
+
+As it understood from the background scenario that the company already had the infrastructure.They just wanted to be relieved from extra load of maintaining the infrastructure so that they can utilize the time for improving their efficiency 
+
+* To cater to the needs of the company only a PaaS services could help.
+paas will provide:
+
+* The ability to quickly & Cost-effectively build & deploy new applications .
+
+*Provision for a computing platform & deployment of the associated set of software applications while negating the need to buy or maintain hardware or software.
+   
